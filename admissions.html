@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Apply to Hidayah International School, Bengaluru. Learn about our admissions process, eligibility, fee structure, and enquire via WhatsApp.">
+<title>Admissions — Hidayah International School</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="css/style.css">
+<style>
+/* Admissions specific */
+.adm-cta-strip {
+  background: linear-gradient(135deg, var(--gold), #b8953f);
+  padding: 20px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.adm-cta-strip p { color: var(--white); font-weight: 600; font-size: 1rem; margin: 0; }
+.adm-cta-strip .strip-btns { display: flex; gap: 12px; flex-wrap: wrap; }
+.strip-btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 10px 20px; border-radius: 50px;
+  font-size: 0.85rem; font-weight: 700;
+  transition: all var(--transition);
+}
+.strip-btn.wa  { background: #25d366; color: var(--white); }
+.strip-btn.call { background: var(--white); color: var(--green); }
+.strip-btn:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.2); }
+
+.process-steps {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0;
+  margin-top: 40px;
+  position: relative;
+}
+
+.process-steps::before {
+  content: '';
+  position: absolute;
+  top: 28px; left: 10%; right: 10%;
+  height: 2px;
+  background: var(--green-light);
+  z-index: 0;
+}
+
+.process-step {
+  text-align: center;
+  padding: 0 12px;
+  position: relative;
+  z-index: 1;
+}
+
+.step-circle {
+  width: 56px; height: 56px;
+  background: var(--green);
+  color: var(--white);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 700;
+  font-size: 1rem;
+  margin: 0 auto 16px;
+  box-shadow: 0 4px 12px rgba(27,67,50,0.25);
+}
+
+.process-step h4 { font-family: var(--font-display); font-size: 0.88rem; color: var(--ink); margin-bottom: 6px; }
+.process-step p  { font-size: 0.75rem; color: var(--ink3); }
+
+.classes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 14px;
+  margin-top: 32px;
+}
+.class-pill {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px 14px;
+  text-align: center;
+  font-weight: 600;
+  color: var(--green);
+  font-family: var(--font-display);
+  font-size: 1rem;
+  transition: all var(--transition);
+}
+.class-pill:hover { background: var(--green); color: var(--white); border-color: var(--green); transform: translateY(-3px); }
+
+.docs-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 28px;
+}
+.doc-item {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 16px 18px;
+  border: 1px solid var(--border);
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--ink2);
+}
+.doc-item::before { content: '📄'; font-size: 1rem; flex-shrink: 0; }
+
+/* Form */
+.adm-form-wrap {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 40px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.form-group { margin-bottom: 20px; }
+.form-group label {
+  display: block;
+  font-size: 0.83rem;
+  font-weight: 600;
+  color: var(--ink2);
+  margin-bottom: 8px;
+}
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: var(--ink);
+  background: var(--cream);
+  transition: border-color var(--transition);
+  outline: none;
+}
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: var(--green);
+  background: var(--white);
+}
+.form-group textarea { resize: vertical; min-height: 100px; }
+
+@media(max-width:768px) {
+  .process-steps { grid-template-columns: 1fr 1fr; }
+  .process-steps::before { display: none; }
+  .docs-list { grid-template-columns: 1fr; }
+  .form-row  { grid-template-columns: 1fr; }
+  .adm-form-wrap { padding: 24px; }
+}
+@media(max-width:480px) {
+  .process-steps { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><div class="nav-logo-icon">H</div><div class="nav-logo-text"><strong>Hidayah International School</strong><span>Bengaluru, Karnataka</span></div></a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="about.html" class="nav-link">About Us</a></li>
+      <li><a href="academics.html" class="nav-link">Academics</a></li>
+      <li class="nav-item"><a href="life-at-hidayah.html" class="nav-link has-dropdown">Life at Hidayah</a><div class="nav-dropdown"><a href="life-at-hidayah.html#activities">Student Activities</a><a href="life-at-hidayah.html#programs">Family Programs</a><a href="life-at-hidayah.html#events">Events &amp; Highlights</a></div></li>
+      <li><a href="islamic-values.html" class="nav-link">Islamic Values</a></li>
+      <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+    </ul>
+    <a href="admissions.html" class="btn btn-gold nav-cta">Apply Now</a>
+    <button class="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-menu"><div class="mobile-menu-inner"><a href="index.html">Home</a><a href="about.html">About Us</a><a href="academics.html">Academics</a><a href="life-at-hidayah.html">Life at Hidayah</a><a href="islamic-values.html">Islamic Values</a><a href="admissions.html">Admissions</a><a href="contact.html">Contact Us</a></div></div>
+
+<div class="page-header">
+  <span class="section-eyebrow">Join the Hidayah Family</span>
+  <h1>Admissions 2026–27</h1>
+  <p>Admissions are open for the academic year 2026–27. Limited seats available — apply early to secure your child's place.</p>
+</div>
+
+<!-- CTA STRIP -->
+<div class="adm-cta-strip">
+  <p>📢 Quick Enquiry — We're here to help!</p>
+  <div class="strip-btns">
+    <a href="https://wa.me/919742289816" class="strip-btn wa">💬 Chat on WhatsApp</a>
+    <a href="tel:+919742289816" class="strip-btn call">📞 Call Now</a>
+  </div>
+</div>
+
+<!-- FORM -->
+<section class="section" id="form" style="background:var(--cream2);">
+  <div class="container">
+    <div class="section-header centered reveal">
+      <span class="section-eyebrow">Get in Touch</span>
+      <h2 class="section-title">Admission Enquiry Form</h2>
+      <p class="section-desc">Fill in the form below and our admissions team will get back to you within 24 hours.</p>
+    </div>
+    <div style="max-width:700px;margin:0 auto;" class="reveal">
+      <div class="adm-form-wrap">
+        <form id="admissionForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="studentName">Student Name *</label>
+              <input type="text" id="studentName" name="studentName" placeholder="Child's full name" required>
+            </div>
+            <div class="form-group">
+              <label for="parentName">Parent / Guardian Name *</label>
+              <input type="text" id="parentName" name="parentName" placeholder="Your full name" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">Phone Number *</label>
+              <input type="tel" id="phone" name="phone" placeholder="+91 XXXXX XXXXX" required>
+            </div>
+            <div class="form-group">
+              <label for="classApplied">Class Seeking Admission *</label>
+              <select id="classApplied" name="classApplied" required>
+                <option value="">Select Grade</option>
+                <option>Beginners (Pre-KG)</option>
+                <option>Level 1 (KG)</option>
+                <option>Level 2 (UKG)</option>
+                <option>Grade 1</option>
+                <option>Grade 2</option>
+                <option>Grade 3</option>
+                <option>Grade 4</option>
+                <option>Grade 5</option>
+                <option>Grade 6</option>
+                <option>Grade 6B</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address" placeholder="Your residential address">
+          </div>
+          <div class="form-group">
+            <label for="message">Message (Optional)</label>
+            <textarea id="message" name="message" placeholder="Any questions or additional information..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;font-size:1rem;padding:15px 28px;">Submit Enquiry →</button>
+        </form>
+        <div style="display:flex;gap:14px;justify-content:center;margin-top:20px;flex-wrap:wrap;">
+          <a href="https://wa.me/919742289816" class="btn btn-outline" style="font-size:0.82rem;padding:10px 18px;">💬 WhatsApp Instead</a>
+          <a href="tel:+919742289816" class="btn btn-outline" style="font-size:0.82rem;padding:10px 18px;">📞 Call Us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OVERVIEW -->
+<section class="section" style="background:var(--white);">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;" class="reveal">
+      <div>
+        <span class="section-eyebrow">Admissions Overview</span>
+        <h2 class="section-title">Why Apply to Hidayah?</h2>
+        <div class="divider"></div>
+        <p>Hidayah International School welcomes families who seek quality CBSE education grounded in authentic Islamic values. We believe every child deserves an environment where their faith and intellect are equally nurtured.</p>
+        <p style="margin-top:14px;">Admissions are based on an interaction and assessment process to ensure the best fit for your child. Seats are limited — we encourage early applications.</p>
+        <div style="margin-top:24px;display:flex;flex-direction:column;gap:12px;">
+          <div style="display:flex;gap:12px;align-items:center;"><span style="color:var(--green);font-size:1.1rem;">✓</span><span style="font-size:0.9rem;color:var(--ink2);">Admissions open for Academic Year 2026–27</span></div>
+          <div style="display:flex;gap:12px;align-items:center;"><span style="color:var(--green);font-size:1.1rem;">✓</span><span style="font-size:0.9rem;color:var(--ink2);">Limited seats available across all grades</span></div>
+          <div style="display:flex;gap:12px;align-items:center;"><span style="color:var(--green);font-size:1.1rem;">✓</span><span style="font-size:0.9rem;color:var(--ink2);">Admissions based on interaction / assessment</span></div>
+          <div style="display:flex;gap:12px;align-items:center;"><span style="color:var(--green);font-size:1.1rem;">✓</span><span style="font-size:0.9rem;color:var(--ink2);">Scholarship Entrance Assessment available</span></div>
+        </div>
+      </div>
+      <div style="background:var(--green);border-radius:var(--radius-lg);padding:36px;color:var(--white);">
+        <h3 style="color:var(--white);margin-bottom:20px;">Classes Available</h3>
+        <div style="display:flex;flex-direction:column;gap:10px;">
+          <div style="background:rgba(255,255,255,0.1);border-radius:var(--radius);padding:12px 16px;font-size:0.9rem;color:rgba(255,255,255,0.9);">🌱 Beginners (Pre-KG)</div>
+          <div style="background:rgba(255,255,255,0.1);border-radius:var(--radius);padding:12px 16px;font-size:0.9rem;color:rgba(255,255,255,0.9);">📚 Level 1 (KG)</div>
+          <div style="background:rgba(255,255,255,0.1);border-radius:var(--radius);padding:12px 16px;font-size:0.9rem;color:rgba(255,255,255,0.9);">🎓 Level 2 (UKG)</div>
+          <div style="background:rgba(255,255,255,0.1);border-radius:var(--radius);padding:12px 16px;font-size:0.9rem;color:rgba(255,255,255,0.9);">📖 Grade 1 to Grade 6B</div>
+        </div>
+        <div style="margin-top:24px;padding:16px;background:rgba(201,168,76,0.2);border-radius:var(--radius);border:1px solid rgba(201,168,76,0.3);">
+          <p style="color:var(--gold);font-weight:600;font-size:0.85rem;margin:0;">⚠️ Limited seats — early applications are strongly recommended.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="section" id="process" style="background:var(--cream2);">
+  <div class="container">
+    <div class="section-header centered reveal">
+      <span class="section-eyebrow">How to Apply</span>
+      <h2 class="section-title">The Admission Process</h2>
+      <p class="section-desc">Simple, clear, and supportive — we guide you through every step.</p>
+    </div>
+    <div class="process-steps">
+      <div class="process-step reveal"><div class="step-circle">1</div><h4>Collect Form</h4><p>Pick up or download the admission form online or from school office</p></div>
+      <div class="process-step reveal"><div class="step-circle">2</div><h4>Submit Form</h4><p>Return the filled form with all required documents</p></div>
+      <div class="process-step reveal"><div class="step-circle">3</div><h4>Assessment</h4><p>Scholarship Entrance Assessment &amp; student interaction</p></div>
+      <div class="process-step reveal"><div class="step-circle">4</div><h4>Confirmation</h4><p>Receive confirmation from the school on admission status</p></div>
+      <div class="process-step reveal"><div class="step-circle">5</div><h4>Fee &amp; Enrolment</h4><p>Complete fee payment and finalise your child's admission</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- DOCUMENTS -->
+<section class="section" id="docs" style="background:var(--white);">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">Required Documents</span>
+      <h2 class="section-title">What to Bring</h2>
+      <p class="section-desc">Please ensure you have the following documents ready when submitting the admission form.</p>
+    </div>
+    <div class="docs-list stagger">
+      <div class="doc-item reveal">Birth Certificate copy (original for verification)</div>
+      <div class="doc-item reveal">Passport size photos — child + both parents (4 each)</div>
+      <div class="doc-item reveal">Aadhar card copy — child and parent</div>
+      <div class="doc-item reveal">Transfer Certificate (required for Grade 2 and above)</div>
+      <div class="doc-item reveal">Previous year's report card / progress report</div>
+      <div class="doc-item reveal">Community certificate (if applicable)</div>
+    </div>
+  </div>
+</section>
+
+<!-- FEE -->
+<section class="section" id="fees" style="background:var(--cream2);">
+  <div class="container">
+    <div class="section-header centered reveal">
+      <span class="section-eyebrow">Fee Details</span>
+      <h2 class="section-title">Fee Structure</h2>
+    </div>
+    <div style="max-width:600px;margin:0 auto;" class="reveal">
+      <div style="background:var(--white);border-radius:var(--radius-lg);padding:40px;text-align:center;border:1px solid var(--border);">
+        <div style="font-size:2.5rem;margin-bottom:16px;">📋</div>
+        <h3 style="margin-bottom:12px;">Fee Structure Available at School Office</h3>
+        <p style="margin-bottom:28px;">For detailed fee information, please visit the school office or contact us directly. We are happy to discuss options that work for your family.</p>
+        <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;">
+          <a href="https://wa.me/919742289816" class="btn btn-primary">💬 WhatsApp for Fees Info</a>
+          <a href="tel:+919742289816" class="btn btn-outline">📞 Call Us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer><div class="footer-inner"><div class="footer-brand"><div class="nav-logo" style="margin-bottom:14px;"><div class="nav-logo-icon">H</div><div class="nav-logo-text"><strong>Hidayah International School</strong><span>Bengaluru, Karnataka</span></div></div><p>Shaping the next generation — in faith and knowledge.</p><div class="social-links"><a href="#" class="social-btn yt" title="YouTube"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1C24 15.9 24 12 24 12s0-3.9-.5-5.8zM9.7 15.5V8.5l6.3 3.5-6.3 3.5z"/></svg></a><a href="#" class="social-btn fb" title="Facebook"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.07C24 5.41 18.63 0 12 0S0 5.41 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.04V9.41c0-3.02 1.8-4.7 4.54-4.7 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.95.93-1.95 1.88v2.27h3.32l-.53 3.49h-2.79V24C19.61 23.1 24 18.1 24 12.07z"/></svg></a><a href="#" class="social-btn ig" title="Instagram"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a><a href="#" class="social-btn wa" title="WhatsApp"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg></a></div></div><div class="footer-col"><h5>Quick Links</h5><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="admissions.html">Admissions</a></li><li><a href="academics.html">Academics</a></li><li><a href="islamic-values.html">Islamic Values</a></li><li><a href="life-at-hidayah.html">Life at Hidayah</a></li><li><a href="contact.html">Contact Us</a></li></ul></div><div class="footer-col"><h5>Apply Now</h5><ul><li><a href="admissions.html#process">Admission Process</a></li><li><a href="admissions.html#docs">Documents Required</a></li><li><a href="admissions.html#fees">Fee Structure</a></li><li><a href="admissions.html#form">Enquiry Form</a></li></ul></div><div class="footer-col"><h5>Contact</h5><div class="footer-contact-item"><span class="icon">📍</span><span>Eidgah Road, Muthkur, Bengaluru 560067</span></div><div class="footer-contact-item"><span class="icon">📞</span><span>+91 97422 89816 / +91 90356 81087</span></div><div class="footer-contact-item"><span class="icon">✉️</span><span>hidayahinternationalschool@gmail.com</span></div></div></div><div class="footer-bottom"><p>© 2025 Hidayah International School. All rights reserved.</p><p>CBSE Affiliated | Pre-KG to Class VII</p></div></footer>
+<div class="fab-container"><div class="fab-actions"><div class="fab-action"><span class="fab-action-label">WhatsApp Us</span><a href="https://wa.me/919742289816" class="fab-btn fab-whatsapp">💬</a></div><div class="fab-action"><span class="fab-action-label">Call Now</span><a href="tel:+919742289816" class="fab-btn fab-call">📞</a></div><div class="fab-action"><span class="fab-action-label">Find Us</span><a href="https://maps.google.com/?q=Eidgah+road+Muthkur+Bengaluru" target="_blank" class="fab-btn fab-location">📍</a></div></div><button class="fab-main">💬</button></div>
+<button class="back-to-top" aria-label="Back to top"><svg viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg"><circle class="btt-progress" cx="22" cy="22" r="19" stroke-dasharray="119.4" stroke-dashoffset="119.4" transform="rotate(-90 22 22)"/></svg><span class="back-to-top-arrow">↑</span></button>
+<script src="js/main.js"></script>
+</body>
+</html>
