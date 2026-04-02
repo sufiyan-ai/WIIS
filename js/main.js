@@ -45,8 +45,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const fabActions = document.querySelector('.fab-actions');
   if (fabMain && fabActions) {
     fabMain.addEventListener('click', (e) => {
-      fabActions.classList.toggle('open');
-      fabMain.textContent = fabActions.classList.contains('open') ? '✕' : '💬';
+      const isOpen = fabActions.classList.toggle('open');
+      fabMain.classList.toggle('is-open', isOpen);
       // Ripple effect
       const ripple = document.createElement('span');
       ripple.className = 'fab-ripple';
@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.addEventListener('click', e => {
       if (!e.target.closest('.fab-container')) {
         fabActions.classList.remove('open');
-        fabMain.textContent = '💬';
+        fabMain.classList.remove('is-open');
       }
     });
   }

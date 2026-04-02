@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Enrol your child at Hidayah International School, Bengaluru — CBSE-affiliated Islamic school. Limited seats for 2026–27. Apply now.">
+<title>Apply Now — Hidayah International School, Bengaluru</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --green: #1b4332;
+  --green-mid: #2d6a4f;
+  --green-light: #d8f3dc;
+  --green-pale: #f0faf2;
+  --gold: #c9a84c;
+  --gold-light: #fdf3dc;
+  --cream: #faf9f5;
+  --cream2: #f4f2ec;
+  --white: #ffffff;
+  --ink: #1a1a16;
+  --ink2: #3d3d38;
+  --ink3: #7a7a6e;
+  --border: #e8e5dc;
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'Inter', sans-serif;
+  --radius: 12px;
+  --radius-lg: 20px;
+  --shadow: 0 2px 16px rgba(27,67,50,0.10);
+  --shadow-lg: 0 8px 40px rgba(27,67,50,0.16);
+  --transition: 0.22s cubic-bezier(0.4,0,0.2,1);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: var(--font-body); background: var(--cream); color: var(--ink); line-height: 1.6; }
+a { text-decoration: none; color: inherit; }
+img { display: block; max-width: 100%; }
+
+/* ── HEADER ── */
+.lp-header {
+  background: var(--green);
+  padding: 18px 24px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  justify-content: center;
+}
+.lp-logo {
+  display: flex; align-items: center; gap: 12px;
+}
+.lp-logo-icon {
+  width: 44px; height: 44px;
+  background: var(--white);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  overflow: hidden; padding: 4px;
+  box-shadow: 0 0 0 2px var(--gold);
+}
+.lp-logo-icon img { width: 100%; height: 100%; object-fit: contain; }
+.lp-logo-text strong { display: block; font-family: var(--font-display); font-size: 1rem; font-weight: 700; color: var(--white); }
+.lp-logo-text span { font-size: 0.68rem; color: rgba(255,255,255,0.6); }
+
+/* ── HERO ── */
+.lp-hero {
+  position: relative;
+  min-height: 520px;
+  display: flex; align-items: center;
+  overflow: hidden;
+}
+.lp-hero-bg {
+  position: absolute; inset: 0;
+  background: url('images/hero/slide1.jpg') center/cover no-repeat;
+}
+.lp-hero-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(105deg, rgba(27,67,50,0.92) 0%, rgba(27,67,50,0.6) 60%, transparent 100%);
+}
+.lp-hero-content {
+  position: relative; z-index: 2;
+  max-width: 620px;
+  padding: 60px 32px 60px 5%;
+}
+.lp-eyebrow {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: rgba(201,168,76,0.18);
+  border: 1px solid rgba(201,168,76,0.4);
+  border-radius: 50px; padding: 5px 14px;
+  font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--gold); font-weight: 600; margin-bottom: 18px;
+}
+.lp-hero-content h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  font-weight: 700; color: var(--white);
+  line-height: 1.15; margin-bottom: 16px;
+  text-shadow: 0 2px 30px rgba(0,0,0,0.3);
+}
+.lp-hero-content h1 em { color: var(--gold); font-style: normal; }
+.lp-hero-content p {
+  color: rgba(255,255,255,0.82); font-size: 1rem;
+  margin-bottom: 28px; max-width: 460px;
+}
+.lp-badges {
+  display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 28px;
+}
+.lp-badge {
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.25);
+  border-radius: 50px; padding: 5px 14px;
+  font-size: 0.75rem; color: var(--white); font-weight: 500;
+}
+.btn-lp {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 14px 28px; border-radius: 50px;
+  font-family: var(--font-body); font-size: 0.9rem; font-weight: 700;
+  cursor: pointer; transition: all var(--transition); border: none;
+}
+.btn-gold { background: var(--gold); color: var(--ink); box-shadow: 0 4px 20px rgba(201,168,76,0.4); }
+.btn-gold:hover { background: #b8963d; transform: translateY(-2px); box-shadow: 0 8px 28px rgba(201,168,76,0.5); }
+.btn-wa { background: #25d366; color: var(--white); }
+.btn-wa:hover { background: #1da852; transform: translateY(-2px); }
+
+/* ── TRUST STRIP ── */
+.trust-strip {
+  background: var(--white); border-bottom: 1px solid var(--border);
+  padding: 18px 24px;
+  display: flex; justify-content: center; gap: 40px; flex-wrap: wrap;
+}
+.trust-item {
+  display: flex; align-items: center; gap: 8px;
+  font-size: 0.82rem; font-weight: 500; color: var(--ink2);
+}
+.trust-item svg { color: var(--green); flex-shrink: 0; }
+
+/* ── MAIN SECTION ── */
+.lp-main { max-width: 1100px; margin: 0 auto; padding: 48px 24px; }
+.lp-grid {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 48px;
+  align-items: start;
+}
+
+/* ── WHY CHOOSE ── */
+.lp-why h2 {
+  font-family: var(--font-display); font-size: 2rem;
+  color: var(--green); margin-bottom: 8px;
+}
+.lp-why .sub { color: var(--ink3); margin-bottom: 28px; font-size: 0.95rem; }
+.why-list { display: flex; flex-direction: column; gap: 18px; margin-bottom: 32px; }
+.why-item {
+  display: flex; gap: 14px; align-items: flex-start;
+  padding: 18px; background: var(--white); border-radius: var(--radius);
+  border: 1px solid var(--border); transition: all var(--transition);
+}
+.why-item:hover { border-color: var(--green); box-shadow: var(--shadow); transform: translateX(4px); }
+.why-icon {
+  width: 44px; height: 44px; flex-shrink: 0;
+  background: var(--green-pale); border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.3rem;
+}
+.why-item h4 { font-size: 0.95rem; font-weight: 700; color: var(--ink); margin-bottom: 4px; }
+.why-item p { font-size: 0.82rem; color: var(--ink3); }
+
+/* Photos grid */
+.lp-photos {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 32px;
+}
+.lp-photos img {
+  width: 100%; aspect-ratio: 4/3; object-fit: cover;
+  border-radius: var(--radius); border: 1px solid var(--border);
+}
+.lp-photos img:first-child { grid-column: span 2; aspect-ratio: 16/9; }
+
+/* Quick stats */
+.lp-stats {
+  display: flex; gap: 24px; flex-wrap: wrap;
+  padding: 24px; background: var(--green); border-radius: var(--radius-lg);
+  margin-bottom: 32px;
+}
+.lp-stat { flex: 1; min-width: 80px; text-align: center; }
+.lp-stat .num { font-family: var(--font-display); font-size: 2rem; font-weight: 700; color: var(--gold); }
+.lp-stat .label { font-size: 0.75rem; color: rgba(255,255,255,0.7); }
+
+/* ── FORM CARD ── */
+.lp-form-card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 36px 32px;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--border);
+  position: sticky; top: 24px;
+}
+.form-header { text-align: center; margin-bottom: 24px; }
+.form-header .badge {
+  display: inline-block;
+  background: #fff0f0; border: 1px solid #ffb3b3;
+  color: #c00; border-radius: 50px;
+  padding: 4px 14px; font-size: 0.72rem; font-weight: 700;
+  letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 10px;
+}
+.form-header h3 { font-family: var(--font-display); font-size: 1.5rem; color: var(--green); margin-bottom: 6px; }
+.form-header p { font-size: 0.83rem; color: var(--ink3); }
+.form-group { margin-bottom: 14px; }
+.form-group label { display: block; font-size: 0.78rem; font-weight: 600; color: var(--ink2); margin-bottom: 5px; }
+.form-group input,
+.form-group select {
+  width: 100%; padding: 11px 14px;
+  border: 1.5px solid var(--border); border-radius: var(--radius);
+  font-family: var(--font-body); font-size: 0.88rem; color: var(--ink);
+  background: var(--cream); transition: border-color var(--transition);
+  outline: none;
+}
+.form-group input:focus,
+.form-group select:focus { border-color: var(--green); background: var(--white); }
+.form-submit {
+  width: 100%; padding: 14px;
+  background: var(--green); color: var(--white);
+  border: none; border-radius: 50px;
+  font-family: var(--font-body); font-size: 0.95rem; font-weight: 700;
+  cursor: pointer; transition: all var(--transition);
+  margin-top: 6px;
+}
+.form-submit:hover { background: var(--green-mid); transform: translateY(-2px); box-shadow: 0 6px 20px rgba(27,67,50,0.3); }
+.form-divider {
+  text-align: center; margin: 16px 0;
+  font-size: 0.75rem; color: var(--ink3);
+  position: relative;
+}
+.form-divider::before, .form-divider::after {
+  content: ''; position: absolute; top: 50%;
+  width: 38%; height: 1px; background: var(--border);
+}
+.form-divider::before { left: 0; }
+.form-divider::after { right: 0; }
+.whatsapp-btn {
+  display: flex; align-items: center; justify-content: center; gap: 8px;
+  width: 100%; padding: 13px;
+  background: #25d366; color: var(--white);
+  border: none; border-radius: 50px;
+  font-family: var(--font-body); font-size: 0.9rem; font-weight: 700;
+  cursor: pointer; transition: all var(--transition);
+  text-decoration: none;
+}
+.whatsapp-btn:hover { background: #1da852; transform: translateY(-2px); }
+.form-note { font-size: 0.72rem; color: var(--ink3); text-align: center; margin-top: 12px; }
+
+/* ── TESTIMONIAL ── */
+.lp-testimonials { margin-top: 40px; }
+.lp-testimonials h2 {
+  font-family: var(--font-display); font-size: 1.6rem; color: var(--green); margin-bottom: 20px;
+}
+.testimonial-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
+.testimonial-card {
+  background: var(--white); border-radius: var(--radius);
+  padding: 24px; border: 1px solid var(--border);
+}
+.t-text { font-size: 0.88rem; color: var(--ink2); font-style: italic; margin-bottom: 14px; line-height: 1.65; }
+.t-text::before { content: '"'; font-family: var(--font-display); font-size: 2rem; color: var(--gold); line-height: 0; vertical-align: -0.5em; margin-right: 3px; }
+.t-author { display: flex; align-items: center; gap: 10px; }
+.t-avatar {
+  width: 36px; height: 36px; border-radius: 50%;
+  background: var(--green-pale); display: flex; align-items: center; justify-content: center;
+  font-size: 1rem; flex-shrink: 0;
+}
+.t-name { font-size: 0.82rem; font-weight: 700; color: var(--ink); }
+.t-grade { font-size: 0.72rem; color: var(--ink3); }
+
+/* ── STICKY CTA (mobile) ── */
+.sticky-cta {
+  display: none;
+  position: fixed; bottom: 0; left: 0; right: 0;
+  background: var(--white);
+  padding: 14px 20px;
+  box-shadow: 0 -4px 20px rgba(0,0,0,0.1);
+  gap: 10px; z-index: 999;
+}
+
+/* ── FOOTER ── */
+.lp-footer {
+  background: var(--ink); color: rgba(255,255,255,0.5);
+  text-align: center; padding: 24px;
+  font-size: 0.78rem;
+}
+.lp-footer a { color: rgba(255,255,255,0.7); }
+
+/* ── FORM SUCCESS ── */
+.form-success {
+  display: none; text-align: center; padding: 20px;
+}
+.form-success .check {
+  font-size: 3rem; margin-bottom: 10px;
+}
+.form-success h4 { color: var(--green); font-family: var(--font-display); font-size: 1.4rem; margin-bottom: 8px; }
+.form-success p { font-size: 0.85rem; color: var(--ink3); }
+
+@media (max-width: 768px) {
+  .lp-grid { grid-template-columns: 1fr; }
+  .lp-form-card { position: static; }
+  .trust-strip { gap: 16px; }
+  .trust-item { font-size: 0.75rem; }
+  .lp-photos img:first-child { grid-column: span 2; }
+  .sticky-cta { display: flex; }
+  body { padding-bottom: 80px; }
+  .lp-hero-content { padding: 40px 20px; }
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER (logo only, no nav) -->
+<header class="lp-header">
+  <div class="lp-logo">
+    <div class="lp-logo-icon"><img src="images/logo.png" alt="Hidayah International School"></div>
+    <div class="lp-logo-text">
+      <strong>Hidayah International School</strong>
+      <span>Bengaluru, Karnataka · CBSE Affiliated</span>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="lp-hero">
+  <div class="lp-hero-bg"></div>
+  <div class="lp-hero-overlay"></div>
+  <div class="lp-hero-content">
+    <div class="lp-eyebrow">✦ Admissions Open — 2026–27</div>
+    <h1>The Best of <em>Both Worlds</em> — Right Here in Bengaluru</h1>
+    <p>CBSE excellence + authentic Islamic values, from Pre-KG to Class VII. Limited seats. Apply before they're gone.</p>
+    <div class="lp-badges">
+      <span class="lp-badge">✓ CBSE Affiliated</span>
+      <span class="lp-badge">✓ Separate Boys &amp; Girls Sections</span>
+      <span class="lp-badge">✓ Pre-KG to Class VII</span>
+      <span class="lp-badge">✓ Quran &amp; Arabic Program</span>
+    </div>
+    <div style="display:flex;gap:12px;flex-wrap:wrap;">
+      <a href="#enquiry" class="btn-lp btn-gold">Apply Now — Limited Seats!</a>
+      <a href="https://wa.me/919742289816?text=Assalamu+Alaikum%2C+I+am+interested+in+admissions+at+Hidayah+International+School+for+2026-27." target="_blank" class="btn-lp btn-wa"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg> WhatsApp Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST STRIP -->
+<div class="trust-strip">
+  <div class="trust-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> CBSE Affiliated School</div>
+  <div class="trust-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Integrated Islamic &amp; Academic Curriculum</div>
+  <div class="trust-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Safe Separate Sections for Boys &amp; Girls</div>
+  <div class="trust-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Response Within 24 Hours</div>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="lp-main">
+  <div class="lp-grid">
+
+    <!-- LEFT: Why Choose + Photos -->
+    <div class="lp-why">
+      <h2>Why Hidayah International School?</h2>
+      <p class="sub">Hundreds of families in Bengaluru trust HIS to raise confident, faith-driven, academically strong children.</p>
+
+      <div class="lp-stats">
+        <div class="lp-stat"><div class="num">Pre-KG</div><div class="label">Starting from</div></div>
+        <div class="lp-stat"><div class="num">VII</div><div class="label">Up to Class</div></div>
+        <div class="lp-stat"><div class="num">2</div><div class="label">Separate sections</div></div>
+        <div class="lp-stat"><div class="num">CBSE</div><div class="label">Affiliation</div></div>
+      </div>
+
+      <div class="why-list">
+        <div class="why-item">
+          <div class="why-icon">📖</div>
+          <div><h4>Quran &amp; Tajweed from Pre-KG</h4><p>Daily Quran recitation, Tajweed classes, and Hifz support — building a lifelong bond with the Book of Allah from day one.</p></div>
+        </div>
+        <div class="why-item">
+          <div class="why-icon">🎓</div>
+          <div><h4>CBSE Academic Excellence</h4><p>Rigorous CBSE curriculum delivered by trained educators — ensuring your child excels in both Islamic education and board exams.</p></div>
+        </div>
+        <div class="why-item">
+          <div class="why-icon">🤲</div>
+          <div><h4>Character Before Grades</h4><p>Dedicated Tarbiyat sessions, Sunnah practices, and Akhlaq building — raising leaders with integrity, not just toppers.</p></div>
+        </div>
+        <div class="why-item">
+          <div class="why-icon">🛡️</div>
+          <div><h4>Safe, Separate Sections</h4><p>Dedicated classroom wings for boys and girls, with gender-appropriate staff, activities, and facilities — peace of mind for parents.</p></div>
+        </div>
+        <div class="why-item">
+          <div class="why-icon">👨‍👩‍👧</div>
+          <div><h4>Family &amp; Community Programs</h4><p>Monthly parents training, Tarbiyat sessions, and family programs — because your journey as a parent matters to us too.</p></div>
+        </div>
+      </div>
+
+      <!-- School photos -->
+      <div class="lp-photos">
+        <img src="images/hero/slide1.jpg" alt="Hidayah International School">
+        <img src="images/life/sports.jpg" alt="Sports at Hidayah">
+        <img src="images/life/academic.jpg" alt="Academic Clubs">
+        <img src="images/enroll/img1388.jpg" alt="Hidayah School Activities">
+        <img src="images/enroll/campus.jpg" alt="Hidayah School Campus">
+      </div>
+
+      <!-- Testimonials -->
+      <div class="lp-testimonials">
+        <h2>What Parents Say</h2>
+        <div class="testimonial-grid">
+          <div class="testimonial-card">
+            <p class="t-text">Alhamdulillah, my daughter has grown in both her deen and her studies since joining HIS. The teachers are dedicated and caring.</p>
+            <div class="t-author"><div class="t-avatar">👩</div><div><div class="t-name">Sister Fatima A.</div><div class="t-grade">Parent — Class IV</div></div></div>
+          </div>
+          <div class="testimonial-card">
+            <p class="t-text">The Quran program and Islamic environment here is exactly what we were looking for. My son loves going to school every day.</p>
+            <div class="t-author"><div class="t-avatar">👨</div><div><div class="t-name">Brother Imran K.</div><div class="t-grade">Parent — Class II</div></div></div>
+          </div>
+          <div class="testimonial-card">
+            <p class="t-text">HIS strikes the perfect balance between academics and Islamic values. We feel confident our children are in the right hands.</p>
+            <div class="t-author"><div class="t-avatar">👩</div><div><div class="t-name">Sister Zainab M.</div><div class="t-grade">Parent — Pre-KG &amp; Class I</div></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT: Enquiry Form -->
+    <div id="enquiry">
+      <div class="lp-form-card">
+        <div class="form-header">
+          <div class="badge">⚡ Limited Seats — 2026–27</div>
+          <h3>Book a Free School Visit</h3>
+          <p>Fill in your details and our admissions team will call you within 24 hours.</p>
+        </div>
+
+        <div id="formWrap">
+          <form id="lpForm" onsubmit="handleSubmit(event)">
+            <div class="form-group">
+              <label for="lp_child">Child's Name</label>
+              <input type="text" id="lp_child" name="child" placeholder="Child's full name" required>
+            </div>
+            <div class="form-group">
+              <label for="lp_grade">Applying for Grade</label>
+              <select id="lp_grade" name="grade" required>
+                <option value="" disabled selected>Select grade</option>
+                <option>Pre-KG</option>
+                <option>KG / LKG</option>
+                <option>Class I</option>
+                <option>Class II</option>
+                <option>Class III</option>
+                <option>Class IV</option>
+                <option>Class V</option>
+                <option>Class VI</option>
+                <option>Class VII</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="lp_parent">Parent Name</label>
+              <input type="text" id="lp_parent" name="parent" placeholder="Your name" required>
+            </div>
+            <div class="form-group">
+              <label for="lp_phone">WhatsApp Number</label>
+              <input type="tel" id="lp_phone" name="phone" placeholder="+91 98765 43210" required>
+            </div>
+            <button type="submit" class="form-submit">Request a Callback →</button>
+          </form>
+
+          <div class="form-success" id="formSuccess">
+            <div class="check">✅</div>
+            <h4>JazakAllah Khair!</h4>
+            <p>We've received your enquiry. Our team will contact you within 24 hours, in sha Allah.</p>
+          </div>
+
+          <div class="form-divider">or connect directly</div>
+
+          <a href="https://wa.me/919742289816?text=Assalamu+Alaikum%2C+I+saw+your+ad+and+want+to+know+more+about+admissions+at+Hidayah+International+School." target="_blank" class="whatsapp-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+            Chat on WhatsApp
+          </a>
+
+          <p class="form-note">🔒 Your information is private and will never be shared.</p>
+        </div>
+
+        <!-- Contact info -->
+        <div style="margin-top:24px;padding-top:20px;border-top:1px solid var(--border);font-size:0.8rem;color:var(--ink3);">
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg> <a href="tel:+919742289816" style="color:var(--green);font-weight:600;">+91 97422 89816</a></div>
+          <div style="display:flex;align-items:center;gap:8px;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Eidgah Road, Muthkur, Bengaluru 560067</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- STICKY MOBILE CTA -->
+<div class="sticky-cta">
+  <a href="#enquiry" style="flex:1;display:flex;align-items:center;justify-content:center;padding:13px;background:var(--green);color:#fff;border-radius:50px;font-weight:700;font-size:0.88rem;gap:6px;">📋 Apply Now</a>
+  <a href="https://wa.me/919742289816" target="_blank" style="flex:1;display:flex;align-items:center;justify-content:center;padding:13px;background:#25d366;color:#fff;border-radius:50px;font-weight:700;font-size:0.88rem;gap:6px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg> WhatsApp</a>
+</div>
+
+<!-- FOOTER -->
+<footer class="lp-footer">
+  <p>© 2026 Hidayah International School · Eidgah Road, Muthkur, Bengaluru 560067 · <a href="tel:+919742289816">+91 97422 89816</a></p>
+</footer>
+<div class="dev-credit" style="padding:8px 24px;gap:7px;"><span class="dev-credit-label" style="font-size:0.6rem;">Designed &amp; Developed by</span><a href="https://solvagence.com" target="_blank" rel="noopener" class="dev-credit-link" style="gap:5px;"><img src="images/solvagence-logo.png" alt="Solvagence" style="height:16px;"><span class="dev-credit-name" style="font-size:0.66rem;">Solvagence</span></a></div>
+
+<script>
+function handleSubmit(e) {
+  e.preventDefault();
+  const form = document.getElementById('lpForm');
+  const success = document.getElementById('formSuccess');
+  // Build WhatsApp message from form data
+  const child  = document.getElementById('lp_child').value;
+  const grade  = document.getElementById('lp_grade').value;
+  const parent = document.getElementById('lp_parent').value;
+  const phone  = document.getElementById('lp_phone').value;
+  const msg = encodeURIComponent(
+    `Assalamu Alaikum,\n\nAdmission Enquiry — 2026-27\n\nChild's Name: ${child}\nApplying for: ${grade}\nParent Name: ${parent}\nPhone: ${phone}\n\nKindly guide us through the admission process. JazakAllah Khair.`
+  );
+  // Open WhatsApp with pre-filled message
+  window.open(`https://wa.me/919742289816?text=${msg}`, '_blank');
+  // Show success state
+  form.style.display = 'none';
+  success.style.display = 'block';
+}
+</script>
+</body>
+</html>
