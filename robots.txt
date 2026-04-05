@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://wiis-nu.vercel.app/sitemap.xml
