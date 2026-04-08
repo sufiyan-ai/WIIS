@@ -6,7 +6,7 @@
 
 Hidayah International School (HIS) is a CBSE (Under Registration) institution located in Bengaluru, Karnataka, India. The school integrates modern academic education with authentic Islamic values, serving students from Pre-KG through Class VII. HIS provides a unique learning environment where academic excellence and Islamic identity are developed hand-in-hand.
 
-**Website:** [https://wiis-nu.vercel.app](https://wiis-nu.vercel.app)
+**Website:** [https://hidayahinternationalschool.com](https://hidayahinternationalschool.com)
 
 ## Key Facts
 
@@ -109,7 +109,7 @@ Admissions are open for the academic year 2026–27. The school accepts applicat
 ### Contact for Admissions
 - **WhatsApp:** [Chat on WhatsApp](https://wa.me/919742289816)
 - **Call:** +91 97422 89816 or +91 90356 81087
-- **Online Enquiry Form:** Available on the [Admissions page](https://wiis-nu.vercel.app/admissions)
+- **Online Enquiry Form:** Available on the [Admissions page](https://hidayahinternationalschool.com/admissions)
 
 ## Family & Community Programmes
 
@@ -143,14 +143,14 @@ HIS provides structured programmes for the entire family:
 
 ## Website Pages
 
-- **Home** — [https://wiis-nu.vercel.app/](https://wiis-nu.vercel.app/)
-- **About Us** — [https://wiis-nu.vercel.app/about](https://wiis-nu.vercel.app/about)
-- **Academics** — [https://wiis-nu.vercel.app/academics](https://wiis-nu.vercel.app/academics)
-- **Admissions** — [https://wiis-nu.vercel.app/admissions](https://wiis-nu.vercel.app/admissions)
-- **Islamic Values** — [https://wiis-nu.vercel.app/islamic-values](https://wiis-nu.vercel.app/islamic-values)
-- **Life at Hidayah** — [https://wiis-nu.vercel.app/life-at-hidayah](https://wiis-nu.vercel.app/life-at-hidayah)
-- **Contact Us** — [https://wiis-nu.vercel.app/contact](https://wiis-nu.vercel.app/contact)
-- **Apply Now (Landing Page)** — [https://wiis-nu.vercel.app/enroll](https://wiis-nu.vercel.app/enroll)
+- **Home** — [https://hidayahinternationalschool.com/](https://hidayahinternationalschool.com/)
+- **About Us** — [https://hidayahinternationalschool.com/about](https://hidayahinternationalschool.com/about)
+- **Academics** — [https://hidayahinternationalschool.com/academics](https://hidayahinternationalschool.com/academics)
+- **Admissions** — [https://hidayahinternationalschool.com/admissions](https://hidayahinternationalschool.com/admissions)
+- **Islamic Values** — [https://hidayahinternationalschool.com/islamic-values](https://hidayahinternationalschool.com/islamic-values)
+- **Life at Hidayah** — [https://hidayahinternationalschool.com/life-at-hidayah](https://hidayahinternationalschool.com/life-at-hidayah)
+- **Contact Us** — [https://hidayahinternationalschool.com/contact](https://hidayahinternationalschool.com/contact)
+- **Apply Now (Landing Page)** — [https://hidayahinternationalschool.com/enroll](https://hidayahinternationalschool.com/enroll)
 
 ## School Vision
 
