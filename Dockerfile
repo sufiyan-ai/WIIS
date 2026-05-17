@@ -4,10 +4,10 @@ FROM nginx:alpine
 RUN rm /etc/nginx/conf.d/default.conf
 
 # Copy custom nginx config
-COPY nginx.conf /etc/nginx/conf.d/
+COPY nginx.conf /etc/nginx/conf.d/default.conf
 
-# Copy static files to nginx document root
-COPY . /usr/share/nginx/html/
+# Copy ONLY public folder contents
+COPY public/ /usr/share/nginx/html/
 
 # Expose Cloud Run port
 EXPOSE 8080
