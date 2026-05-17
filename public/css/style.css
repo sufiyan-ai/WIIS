@@ -1072,6 +1072,7 @@ body.cursor-click .cursor-ring { scale: 0.8 !important; }
 .act-card-img,
 .gallery-img {
   overflow: hidden;
+  aspect-ratio: 16/9;
 }
 .life-card-img img,
 .act-card-img img,

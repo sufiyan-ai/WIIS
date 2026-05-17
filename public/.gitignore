@@ -1,0 +1,11 @@
+# Raw source media (large files, not needed for deployment)
+website_media/
+
+# Python scripts (dev tools, not part of site)
+prepare_images.py
+patch_pages.py
+convert_heic.py
+
+# OS
+.DS_Store
+Thumbs.db
