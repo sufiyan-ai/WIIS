@@ -1,0 +1,37 @@
+/* responsive.css */
+
+@media (max-width: 1024px) {
+  .footer-inner { grid-template-columns: 1fr 1fr; }
+  .welcome-inner { grid-template-columns: 1fr; gap: 40px; }
+  .content-grid-2 { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 768px) {
+  .nav-links, .nav-cta { display: none; }
+  .hamburger { display: flex; }
+
+  .section { padding: 56px 20px; }
+  .section-sm { padding: 40px 20px; }
+
+  .footer-inner { grid-template-columns: 1fr; gap: 28px; }
+  .footer-bottom { flex-direction: column; text-align: center; }
+
+  .page-header { padding: calc(var(--nav-h) + 40px) 20px 48px; }
+  
+  .fab-main { width: 60px; height: 60px; }
+  .fab-main svg { width: 26px; height: 26px; }
+
+  .hero-content h1 { font-size: 2rem; }
+}
+
+@media (max-width: 480px) {
+  .why-grid { grid-template-columns: 1fr; }
+  .highlights-row { grid-template-columns: 1fr; }
+  .social-grid { grid-template-columns: 1fr; }
+}
+
+/* Touch Targets */
+.fab-btn, .fab-main, .slider-btn, .hamburger {
+  min-width: 44px;
+  min-height: 44px;
+}

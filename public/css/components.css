@@ -1,0 +1,72 @@
+/* components.css */
+
+/* Buttons */
+.btn { display: inline-flex; align-items: center; gap: 8px; padding: 13px 28px; border-radius: 50px; font-family: var(--font-body); font-size: 0.88rem; font-weight: 600; cursor: pointer; border: 2px solid transparent; transition: all var(--transition); white-space: nowrap; letter-spacing: 0.02em; position: relative; overflow: hidden; }
+.btn-primary { background: var(--green); color: var(--white); border-color: var(--green); }
+.btn-primary:hover { background: var(--green-mid); border-color: var(--green-mid); transform: translateY(-2px); box-shadow: 0 6px 20px rgba(27,67,50,0.30); }
+.btn-gold { background: var(--gold); color: var(--white); border-color: var(--gold); }
+.btn-gold:hover { background: #b8953f; transform: translateY(-2px); box-shadow: 0 6px 20px rgba(201,168,76,0.35); }
+.btn-outline { background: transparent; color: var(--green); border-color: var(--green); }
+.btn-outline:hover { background: var(--green); color: var(--white); transform: translateY(-2px); }
+.btn-outline-white { background: transparent; color: var(--white); border-color: rgba(255,255,255,0.6); }
+.btn-outline-white:hover { background: rgba(255,255,255,0.15); border-color: var(--white); }
+.btn::after { content: ''; position: absolute; top: 0; left: -100%; width: 60%; height: 100%; background: linear-gradient(120deg, transparent, rgba(255,255,255,0.25), transparent); transform: skewX(-20deg); transition: left 0.5s ease; pointer-events: none; }
+.btn:hover::after { left: 150%; }
+:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+.nav-cta { margin-left: 8px; padding: 9px 20px; font-size: 0.83rem; }
+.nav-cta.active { box-shadow: 0 0 0 3px rgba(201,168,76,0.45); }
+
+/* Standardized Card Component */
+.card { background: #fff; border-radius: 20px; overflow: hidden; border: 1px solid var(--border); transition: all var(--transition); }
+.card:hover { transform: translateY(-4px); box-shadow: 0 8px 32px rgba(27,67,50,0.15), 0 0 0 1px rgba(27,67,50,0.08); border-color: var(--green-light); }
+.card-image { width: 100%; height: 240px; overflow: hidden; background: var(--cream2); }
+.card-image img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.5s ease; }
+.card:hover .card-image img { transform: scale(1.05); }
+.card-body { padding: 24px; }
+.card-body h3 { margin-bottom: 8px; font-size: 1.2rem; }
+.card-body p { font-size: 0.9rem; }
+
+/* Highlight Pills / Grid */
+.highlight-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
+.highlight-item { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px 20px; text-align: center; transition: all var(--transition); }
+.highlight-item:hover { border-color: var(--green); box-shadow: var(--shadow); transform: translateY(-3px); }
+.highlight-item .icon { width: 52px; height: 52px; background: var(--green-pale); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 14px; font-size: 1.4rem; }
+.highlight-item h4 { font-family: var(--font-display); font-size: 1rem; color: var(--ink); margin-bottom: 6px; }
+.highlight-item p { font-size: 0.82rem; }
+
+/* Tags */
+.tag { display: inline-block; background: var(--gold-light); color: #8a6c1c; border-radius: 50px; padding: 3px 10px; font-size: 0.72rem; font-weight: 600; }
+
+/* Dev Credit */
+.dev-credit { background: #fff; padding: 13px 24px; display: flex; align-items: center; justify-content: center; gap: 10px; font-family: var(--font-body); border-top: 1px solid #e8e3d8; }
+.dev-credit-label { font-size: 0.7rem; font-weight: 800; color: #b0a898; letter-spacing: 0.03em; }
+.dev-credit-link { display: inline-flex; align-items: center; gap: 7px; text-decoration: none; transition: opacity 0.2s; }
+.dev-credit-link:hover { opacity: 0.75; }
+.dev-credit-link img { height: 22px; width: auto; display: block; }
+.dev-credit-name { font-size: 0.78rem; font-weight: 700; color: #1a1a1a; letter-spacing: 0.08em; text-transform: uppercase; }
+
+/* Social buttons */
+.social-links { display: flex; gap: 10px; margin-top: 16px; }
+.social-btn { width: 36px; height: 36px; background: rgba(255,255,255,0.08); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.85rem; transition: all var(--transition); }
+.social-btn:hover { background: var(--green); transform: scale(1.15) translateY(-2px); }
+.social-btn.yt:hover { background: #ff0000; }
+.social-btn.fb:hover { background: #1877f2; }
+.social-btn.ig:hover { background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%); }
+.social-btn.wa:hover { background: #25d366; }
+.social-btn svg { display: block; }
+
+/* FAB Buttons */
+.fab-btn { width: 46px; height: 46px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--white); box-shadow: 0 4px 14px rgba(0,0,0,0.22); transition: all var(--transition); flex-shrink: 0; }
+.fab-btn svg { width: 20px; height: 20px; flex-shrink: 0; }
+.fab-whatsapp svg { width: 23px; height: 23px; }
+.fab-btn:hover { transform: scale(1.12); box-shadow: 0 6px 18px rgba(0,0,0,0.3); }
+.fab-whatsapp { background: #25d366; position: relative; }
+.fab-call { background: var(--green); }
+.fab-location { background: var(--gold); }
+.fab-whatsapp::before { content: ''; position: absolute; inset: -4px; border-radius: 50%; animation: fabPulseRing 2.5s cubic-bezier(0.455,0.03,0.515,0.955) infinite; pointer-events: none; }
+@keyframes fabPulseRing { 0% { box-shadow: 0 0 0 0 rgba(37,211,102,0.45); } 70% { box-shadow: 0 0 0 12px rgba(37,211,102,0); } 100% { box-shadow: 0 0 0 0 rgba(37,211,102,0); } }
+
+/* Spotlight Glow */
+.has-spotlight { position: relative; overflow: hidden; }
+.spotlight-glow { position: absolute; inset: 0; background: radial-gradient(circle at var(--spotlight-x, 50%) var(--spotlight-y, 50%), rgba(201,168,76,0.13) 0%, transparent 65%); opacity: 0; transition: opacity 0.35s ease; pointer-events: none; border-radius: inherit; }
+.has-spotlight.spotlight-active .spotlight-glow { opacity: 1; }

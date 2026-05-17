@@ -8,7 +8,11 @@
 <title>Hidayah International School — Bengaluru</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/base.css">
+<link rel="stylesheet" href="/css/layout.css">
+<link rel="stylesheet" href="/css/components.css">
+<link rel="stylesheet" href="/css/pages.css">
+<link rel="stylesheet" href="/css/responsive.css">
 <link rel="canonical" href="https://hidayahinternationalschool.com/">
 <meta name="robots" content="index, follow">
 <meta name="author" content="Hidayah International School">
@@ -45,39 +49,7 @@
   "sameAs": ["https://www.instagram.com/hidayahinternational/"]
 }
 </script>
-<style>
-/* ── HOME SPECIFIC ── */
-/* HERO */
-.hero { position: relative; height: 100vh; min-height: 600px; overflow: hidden; padding-top: 0; }
-.hero-slider { width: 100%; height: 100%; }
-.hero-slide { position: absolute; inset: 0; display: flex; align-items: center; opacity: 0; transition: opacity 0.8s ease; }
-.hero-slide.active { opacity: 1; }
-.hero-bg { position: absolute; inset: 0; background-size: cover; background-position: center; transition: transform 8s ease; }
-.hero-slide.active .hero-bg { transform: scale(1.04); }
-.hero-overlay { position: absolute; inset: 0; background: linear-gradient(105deg, rgba(27,67,50,0.88) 0%, rgba(27,67,50,0.5) 50%, transparent 100%); }
-.hero-content { position: relative; z-index: 2; max-width: 1200px; margin: 0 auto; padding: calc(var(--nav-h) + 20px) 24px 60px; width: 100%; }
-.hero-eyebrow { display: inline-flex; align-items: center; gap: 8px; background: rgba(201,168,76,0.18); border: 1px solid rgba(201,168,76,0.4); border-radius: 50px; padding: 6px 16px; font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); font-weight: 600; margin-bottom: 20px; position: relative; }
-.hero-eyebrow::after { content: ''; position: absolute; bottom: -6px; left: 16px; height: 2px; width: 0; background: var(--gold); border-radius: 2px; transition: width 0.6s ease 0.3s; }
-.hero-slide.active .hero-eyebrow::after { width: calc(100% - 32px); }
-.hero-content h1 { color: var(--white); font-size: clamp(2.2rem, 6vw, 4.2rem); max-width: 700px; margin-bottom: 18px; text-shadow: 0 2px 40px rgba(0,0,0,0.3); }
-.hero-content p { color: rgba(255,255,255,0.82); font-size: 1.05rem; max-width: 520px; margin-bottom: 32px; text-shadow: 0 1px 20px rgba(0,0,0,0.25); }
-.hero-btns { display: flex; gap: 14px; flex-wrap: wrap; }
-.hero-controls { position: absolute; bottom: 32px; left: 50%; transform: translateX(-50%); display: flex; align-items: center; gap: 20px; z-index: 3; }
-.slider-dots { display: flex; gap: 8px; align-items: center; }
-.slider-dot { width: 8px; height: 8px; border-radius: 4px; border: none; background: rgba(255,255,255,0.45); cursor: pointer; transition: width 0.35s cubic-bezier(0.22,1,0.36,1), background 0.3s ease; }
-.slider-dot.active { width: 24px; background: var(--gold); }
-@keyframes heroWord { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
-.hw { display: inline-block; opacity: 0; animation: heroWord 0.5s cubic-bezier(0.22,1,0.36,1) forwards; }
-.slider-btn { width: 44px; height: 44px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.2); background: rgba(255,255,255,0.12); color: var(--white); cursor: pointer; font-size: 1rem; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease; backdrop-filter: blur(8px); }
-.slider-btn:hover { background: rgba(255,255,255,0.22); border-color: rgba(255,255,255,0.5); transform: scale(1.05); }
-.slide-1 .hero-bg { background-color: var(--green); background-image: linear-gradient(135deg, #1b4332, #2d6a4f); }
-.slide-2 .hero-bg { background-color: #2a3f2d; background-image: linear-gradient(135deg, #1a3028, #2d5a3d); }
-.slide-3 .hero-bg { background-color: #1d3557; background-image: linear-gradient(135deg, #1d3557, #2c5282); }
-.slide-4 .hero-bg { background-color: #3d2b1a; background-image: linear-gradient(135deg, #3d2b1a, #6b4c2a); }
-.slide-5 .hero-bg { background-color: #1b4332; background-image: linear-gradient(135deg, #0f2b20, #1b4332); }
-.hero-pattern { position: absolute; inset: 0; opacity: 0.06; pointer-events: none; z-index: 1; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Cg fill='none' stroke='%23ffffff' stroke-width='0.8'%3E%3Cpolygon points='40,4 47,17 62,17 51,26 55,40 40,32 25,40 29,26 18,17 33,17'/%3E%3Cpolygon points='40,20 44,29 54,29 47,35 49,44 40,39 31,44 33,35 26,29 36,29'/%3E%3Crect x='30' y='30' width='20' height='20' transform='rotate(45 40 40)' opacity='0.4'/%3E%3C/g%3E%3C/svg%3E"); background-size: 80px 80px; background-repeat: repeat; }
-@media (max-width: 600px) { .hero-content h1 { font-size: 2rem; } }
-</style>
+
 </head>
 <body>
 
@@ -309,7 +281,7 @@
         <span class="s-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg></span>
         <span>WhatsApp</span>
       </a>
-      <a href="https://maps.app.goo.gl/MPx48AzGQCLECvP27" target="_blank" rel="noopener noreferrer" class="social-card reveal" style="color:var(--green);">
+      <a href="https://maps.app.goo.gl/MPx48AzGQCLECvP27" target="_blank" rel="noopener noreferrer" class="social-card reveal" >
         <span class="s-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
         <span>Find Us on Map</span>
       </a>
@@ -321,7 +293,7 @@
 <footer>
   <div class="footer-inner">
     <div class="footer-brand">
-      <div class="nav-logo" style="margin-bottom:14px;">
+      <div class="nav-logo" >
         <div class="nav-logo-icon"><img src="/images/logo.png" alt="Hidayah International School"></div>
         <div class="nav-logo-text">
           <strong>Hidayah International School</strong>
@@ -394,7 +366,7 @@
     </div>
     <div class="fab-action">
       <span class="fab-action-label">Find Us</span>
-      <a href="https://maps.app.goo.gl/MPx48AzGQCLECvP27" target="_blank" rel="noopener noreferrer" class="fab-btn fab-location"><img src="/images/google-maps-icon.webp" alt="Google Maps" style="width:32px;height:32px;object-fit:contain;"></a>
+      <a href="https://maps.app.goo.gl/MPx48AzGQCLECvP27" target="_blank" rel="noopener noreferrer" class="fab-btn fab-location"><img src="/images/google-maps-icon.webp" alt="Google Maps" ></a>
     </div>
   </div>
   <button class="fab-main"><span class="fab-icon-open"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/></svg></span><span class="fab-icon-close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span></button>
