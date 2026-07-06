@@ -5,6 +5,7 @@ website_media/
 prepare_images.py
 patch_pages.py
 convert_heic.py
+server.py
 
 # OS
 .DS_Store
