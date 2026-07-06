@@ -18,9 +18,9 @@ Hidayah International School (HIS) is a CBSE (Under Registration) institution lo
 | **Grades Offered** | Pre-KG to Class VII |
 | **Sections** | Separate Boys & Girls sections |
 | **Medium of Instruction** | English (with Arabic, Urdu/Kannada support) |
-| **Phone** | +91 97422 89816, +91 90356 81087 |
+| **Phone** | +91 90356 81087 |
 | **Email** | hidayahinternationalschool@gmail.com |
-| **WhatsApp** | [+91 97422 89816](https://wa.me/919742289816) |
+| **WhatsApp** | [+91 90356 81087](https://wa.me/919035681087) |
 | **Instagram** | [@hidayahinternational](https://www.instagram.com/hidayahinternational/) |
 | **Google Maps** | [View Location](https://maps.app.goo.gl/MPx48AzGQCLECvP27) |
 
@@ -107,8 +107,8 @@ Admissions are open for the academic year 2026–27. The school accepts applicat
 - Community certificate (if applicable)
 
 ### Contact for Admissions
-- **WhatsApp:** [Chat on WhatsApp](https://wa.me/919742289816)
-- **Call:** +91 97422 89816 or +91 90356 81087
+- **WhatsApp:** [Chat on WhatsApp](https://wa.me/919035681087)
+- **Call:** +91 90356 81087
 - **Online Enquiry Form:** Available on the [Admissions page](https://hidayahinternationalschool.com/admissions)
 
 ## Family & Community Programmes
@@ -127,7 +127,6 @@ HIS provides structured programmes for the entire family:
 - Islamic Clubs & Nasheeds
 - Academic Clubs & Olympiads (Science, Math, Quran competitions)
 - Educational School Trips
-- Summer Camp (coming soon)
 
 ## Annual School Events
 
@@ -164,9 +163,8 @@ HIS provides structured programmes for the entire family:
 
 | Day | Hours |
 |-----|-------|
-| Monday – Thursday | 8:00 AM – 4:00 PM |
-| Friday | 8:00 AM – 1:00 PM |
-| Saturday | 9:00 AM – 1:00 PM |
+| Monday – Friday | 9:30 AM – 12:30 PM |
+| Saturday | Closed |
 | Sunday | Closed |
 
 *Office hours may vary during Ramadan, Eid, and school holidays.*
