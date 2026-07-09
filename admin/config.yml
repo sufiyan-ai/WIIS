@@ -1,0 +1,19 @@
+backend:
+  name: github
+  repo: sufiyan-ai/WIIS # Path to your GitHub repository
+  branch: main # Branch to update
+
+media_folder: "images/uploads" # Media files will be stored in the repo under images/uploads
+public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
+
+collections:
+  - name: "notices"
+    label: "Notice Board"
+    folder: "data/notices"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Notice Badges (e.g. Urgent, Important)", name: "badges", widget: "string", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
